@@ -10,8 +10,7 @@
 		"format": "prettier --write \"**/*.{js,ts,d.ts,.html}\"",
 		"format:check": "prettier --check \"**/*.{js,ts,d.ts,.html}\"",
 		"adjust-version:lib": "rjp projects/an-library/package.json version $VERSION",
-		"security:check": "npm audit --production --audit-level high",
-		"prepare": "husky install"
+		"security:check": "npm audit --production --audit-level high"
 	},
 	"private": true,
 	"dependencies": {
