@@ -51,7 +51,6 @@
 	"lint-staged": {
 		"**/*.{js,ts,d.ts,.html}": [
 			"prettier --check",
-			"ng build an-library",
 			"git add"
 		]
 	}
