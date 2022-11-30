@@ -49,8 +49,9 @@
 		}
 	},
 	"lint-staged": {
-		"projects/**/*.ts": [
-			"prettier --write",
+		"**/*.{js,ts,d.ts,.html}": [
+			"prettier --check",
+			"ng build an-library",
 			"git add"
 		]
 	}
