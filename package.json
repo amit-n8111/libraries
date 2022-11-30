@@ -9,7 +9,8 @@
 		"test": "ng test",
 		"format": "prettier --write \"**/*.{js,ts,d.ts,.html}\"",
 		"format:check": "prettier --check \"**/*.{js,ts,d.ts,.html}\"",
-		"adjust-version:lib": "rjp projects/an-library/package.json version $VERSION"
+		"adjust-version:lib": "rjp projects/an-library/package.json version $VERSION",
+		"prepare": "husky install"
 	},
 	"private": true,
 	"dependencies": {
@@ -42,10 +43,5 @@
 		"prettier": "^2.8.0",
 		"replace-json-property": "^1.8.0",
 		"typescript": "~4.7.2"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm run format:check"
-		}
 	}
 }

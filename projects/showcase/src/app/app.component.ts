@@ -22,9 +22,7 @@ export class AppComponent {
 		this._alertService.createWarningAlert('Sample warning message');
 	}
 
-public createInfoMessage(): void {
+	public createInfoMessage(): void {
 		this._alertService.createInfoAlert('Sample info message');
 	}
-
-
 }

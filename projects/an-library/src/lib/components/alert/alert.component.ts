@@ -21,7 +21,7 @@ export class AlertComponent implements OnInit {
 		this.alertMessage$ = merge(this._alertService.alertMessage$, this._close$);
 	}
 
-closeAlert(): void {
+	closeAlert(): void {
 		this._close$.next(false);
 	}
 }
